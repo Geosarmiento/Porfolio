@@ -75,32 +75,86 @@ nav ul li:hover ul{
 
 
 
-main{
-    background-color #4c6879;
-    width:1140px;
-    height: 500px;
-    margin: auto;  
-}
 
 .contenedor_perfil{
-    width: 1140px;
-    margin: auto;
-    background-color: #156656;    
+    width: 80%;
+    margin: auto; 
     display: flex;
     justify-items: center;;
     justify-content: center;;
 }
 
 .contenedor_perfil .texto{
-    max-width: 50%;
-    background-image: linear-gradient(to top, red, yellow);
+    padding: 40px 30px;
+    width: 50%;
     animation-name: texto;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 5s;
-    animation-delay: 0s;
+    animation-iteration-count infinite;
+    animation-timing-function ease;
+    animation-duration 5s;
+    animation-delay 0s;
 
 }
+
+.foto_perfil{
+    width :50%;
+    margin-left: 0;
+    margin-top: -50px;
+    
+}
+.fondo_foto_perfil{
+    margin-top: -300px;
+    margin-left: 550px;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 30% 70% 70% 30% / 35% 45% 55% 65%;
+    background-image: linear-gradient(45deg,#3023AE 0%,#FF0099 100%);
+    z-index: -2;
+
+}
+
+
+.redes{
+    padding: 10px 20px;  
+}
+
+.redes img{
+    margin-right 20px;
+}
+
+
+@media (max-width: 600px) {
+    .foto_perfil{
+        display: ;
+        width: 200px;
+        height: 180px;
+        position: absolute;
+        
+    }
+    .contenedor_perfil .texto{
+        margin-top: 200px;
+        width: 95%;
+        animation-name: texto;
+        animation-iteration-count infinite;
+        animation-timing-function ease;
+        animation-duration 5s;
+        animation-delay 0s;
+    
+    }
+    .fondo_foto_perfil{
+        margin-top: -300px;
+        margin-left: 550px;
+        position: absolute;
+        width: 700px;
+        height: 500px;
+        border-radius: 30% 70% 70% 30% / 35% 45% 55% 65%;
+        background-image: linear-gradient(45deg,#3023AE 0%,#FF0099 100%);
+        z-index: -2;
+        box-sizing:border-box ;
+    }    
+}
+
+
 
 @keyframes texto {
     0%{ margin-right:100px;}
@@ -111,61 +165,6 @@ main{
     
 }
 
-
-main contenedor_perfil h1{
- padding-top: 120px;
-   
-        
-}
-main contenedor_perfil h1, p{
-    max-width: 500px;
-    margin-left: 30px;
-       
-}
-
-.redes{
-    padding: 10px 20px;  
-}
-
-.perfil{
-    width: 500px;
-    background-color: #2080e0
-    
-
-}
-
-
-
-
-
-
-
-
-
-
-main h1.titulo{
-    margin-top 150px;
-    width 500px;
-    font-size 45px;
-    padding-left 80px;
-}
-main p.home{
-    width 550px;
-    padding 10px 80px;
-    
-}
-
-
-.redes img{
-    margin-right 20px;
-}
-
-footer{
- width: 1140px;
- margin: auto;
- font-size: 10px;
-    
-}
 
 
 
@@ -301,19 +300,21 @@ footer{
 
 
 
-
+.contact{
+    margin: auto;
+    text-align: center;
+}
 
 
 
 .formulario{
-    width: 350px;
-    height:auto;
+    width: 800px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #2080e0;
-    border-radius: 10px;
+ 
+  padding: 20 20;
+  border-radius: 15px;
+  margin-top: 30px;
+  
 }
 input{
     width: 300px;
@@ -324,6 +325,12 @@ input{
     border: none;
 }
 
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+           
+       }
 
 
 @media (max-width: 600px) {
@@ -396,6 +403,10 @@ input{
     }
 
     
+
+    .foto_perfil{
+        width: 200px;
+    }
 
 
 
