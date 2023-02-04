@@ -15,18 +15,18 @@
            
             <nav>
                   <ul class="menu">
-                      <li><a href="../index.html"> Home</li></a>
-                      <li><a href="about.html">About </li></a>
-                      <li><a href="gallery.html">Gallery</li></a>
-                      <li><a href="experience.html">Experience</li></a>
-                      <li><a href="#academy.html">Academy</li></a>
-                      <li><a href="contact.html">Contact
+                    <li><a href="../index.html"> Home</li></a>
+                    <li><a href="../pages/about.html">About </li></a>
+                    <li><a href="../pages/gallery.html">Gallery</li></a>
+                    <li><a href="../pages/experience.html">Experience</li></a>
+                    <li><a href="../pages/academy.html">Academy</li></a>
+                    <li><a href="../pages/contact.html">Contact</li></a>
                       </li></a>
                   </ul>
               </nav>
         </header>
     
-        <main class="contact .bg-primary">
+        <main class="contact ">
 
               
 
@@ -34,22 +34,35 @@
         <h2>Deja tus datos y en breve nos comunicaremos con vos</h2>
 
 
-        <form class="formulario bg-primary" >
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+        
+        <form class="row g-3 formulario">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Number phone</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          
+         
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
 
 
 
